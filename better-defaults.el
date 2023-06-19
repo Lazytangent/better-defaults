@@ -43,9 +43,9 @@
 ;;; Code:
 
 (progn
-  (unless (or (fboundp 'helm-mode) (fboundp 'ivy-mode) (bound-and-true-p fido-vertical-mode))
-    (ido-mode t)
-    (setq ido-enable-flex-matching t))
+  ;; (unless (or (fboundp 'helm-mode) (fboundp 'ivy-mode) (bound-and-true-p fido-vertical-mode))
+  ;;   (ido-mode t)
+  ;;   (setq ido-enable-flex-matching t))
 
   (unless (memq window-system '(mac ns))
     (menu-bar-mode -1))
